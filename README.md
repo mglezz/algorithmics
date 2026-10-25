@@ -1,42 +1,39 @@
-﻿# Algorithmics
+# Algorithmics
 
-An English-language study repository for algorithms, data structures, and technical interviews, using Java for implementation practice.
+Algorithms and data structures in English, with Java examples and a separate space for your own practice.
 
-The objective is to solve unfamiliar problems, justify correctness, analyze resource use, and explain decisions clearly. Reading is preparation; independent implementation and review are evidence of learning.
+## Where things belong
 
-## Start here
-
-1. Follow the [curriculum](theory/README.md) in prerequisite order.
-2. Trace each example, then attempt the exercises before opening the hints.
-3. Implement solutions under `problems/`, including a specification, proof, complexity analysis, and meaningful tests.
-4. Record independent attempts and delayed reviews in [PROGRESS.md](PROGRESS.md).
-5. Use the interview practice unit after building the foundations.
-
-## Repository layout
-
-| Location | Purpose |
+| Folder | Purpose |
 |---|---|
-| [theory/](theory/README.md) | Ordered course, references, exercises, and technical vocabulary |
-| `algorithms/` | Your reusable algorithm implementations |
-| `data-structures/` | Your implementations of data structures |
-| `problems/` | Problem statements, solutions, and reviews |
-| `tests/` | Verification tools and regression tests |
-| [PROGRESS.md](PROGRESS.md) | Evidence of mastery and review schedule |
+| [algorithms/](algorithms/README.md) | Algorithm theory: concepts, proofs, complexity, worked examples and sources |
+| [data-structures/](data-structures/README.md) | Data structure theory: representation, invariants, operations, costs and sources |
+| [problems/](problems/README.md) | Exercises you work on, your solutions, tests and reviews |
+| [notes/](notes/README.md) | Short revision sheets and quick lookup documents |
+| [tests/](tests/README.md) | Checks for documentation links and executable theory examples |
 
-The existing [service dependencies implementation](problems/serviceDependencies/SimpleAlgorithm.java) is a case study for the graph unit.
+## Start studying
 
-## Scope and expectations
+1. Follow the [curriculum](CURRICULUM.md), which links the theory across both folders.
+2. Read a chapter, trace its worked example, and explain its invariant in English.
+3. Attempt the linked [practice set](problems/practice/README.md) before opening the hints.
+4. Keep your implementations in their own problem folders and record evidence in [PROGRESS.md](PROGRESS.md).
+5. Use [quick notes](notes/README.md) to recall something you have already studied.
 
-The curriculum covers undergraduate foundations, common interview techniques, and advanced extensions. It is a study plan, not an official Google syllabus or a promise of an offer. Interview format and internship eligibility depend on the role and recruiting process; confirm those with your recruiter and the current job description.
+The existing [Service Startup Dependencies](problems/serviceDependencies/README.md) exercise is connected to the [topological-order chapter](algorithms/graphs/14-traversal-and-topological-order.md).
 
-All added code, documentation, exercises, and commit messages are in English. Java API claims use explicitly versioned documentation. Each unit links to primary sources; see the [source register and verification notes](theory/SOURCES.md). Do not memorize templates without their preconditions: an algorithm is only a solution when its assumptions match the problem.
+## Sources and review
 
-## Verify the examples
+Each theory chapter maps sections to named sources and distinguishes standard algorithms from repository-written explanations, diagrams and code. [SOURCES.md](SOURCES.md) records references, attribution policy, review corrections and limits.
 
-With PowerShell and a JDK supporting Java 17 compilation, run from the repository root:
+This is a broad study course with advanced extensions, not an official Google syllabus or an exhaustive algorithms textbook. Check the specific role and recruiter instructions for current interview requirements.
+
+## Verify the material
+
+With PowerShell and a JDK supporting Java 17 compilation:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\verify-theory.ps1
 ```
 
-This compiles the Java blocks directly from the notes, runs deterministic property and differential checks, and verifies local documentation links. It also checks the existing clean startup-order solution. Temporary build files are cleaned up automatically. The execution-policy option applies only to this PowerShell process; it does not change the machine's saved policy. If your shell already permits scripts, `./tests/verify-theory.ps1` is sufficient.
+The policy option affects only this process. The script checks local links and Markdown structure, compiles Java directly from the theory, and runs property/differential checks. See [tests/README.md](tests/README.md) for exact coverage.
