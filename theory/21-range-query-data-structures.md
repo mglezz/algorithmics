@@ -95,6 +95,8 @@ Coordinate compression sorts distinct coordinates and maps them to ranks. It pre
 ## Sources and deeper study
 
 - [Open Data Structures](https://opendatastructures.org/): array, tree, and binary-representation foundations.
+- [Competitive Programmer's Handbook](https://cses.fi/book/book.pdf): range-query and advanced-segment-tree sections, including Fenwick blocks and lazy propagation.
+- [HKOI, Data Structures III](https://assets.hkoi.org/training2022/ds-iii.pdf): sparse tables and range-minimum preprocessing.
 - [MIT advanced data structures course](https://courses.csail.mit.edu/6.851/spring12/): deeper range-searching, persistence, and data-structure design.
 
 The Fenwick block invariant, segment-tree algebra, and sparse-table overlap argument are derived explicitly above; validate implementations against a simple array before optimizing.

@@ -89,6 +89,6 @@ For internship preparation, build strong evidence from coursework, personal proj
 ## Sources
 
 - [Life at Google, Prepare for Your Google Interview: Coding](https://www.youtube.com/watch?v=6ZZX9iIgFoo), published July 2019: official coding-preparation guidance, including communication and testing. Historical guidance, not a current process specification.
-- [Google, A Google engineer shares her technical interview tips](https://blog.google/company-news/inside-google/life-at-google/google-engineer-shares-her-technical-interview-tips/), April 2022: practice speaking aloud and explain your reasoning.
+- [Google, A Google engineer shares her technical interview tips](https://blog.google/company-news/inside-google/life-at-google/google-engineer-shares-her-technical-interview-tips/), March 17, 2022: practice speaking aloud and explain your reasoning.
 - [Google Careers interview preparation entry point](https://www.google.com/about/careers/applications/interview-tips): check current material and recruiter instructions. The text retrieval during this repository's preparation exposed mostly navigation, so no specific hiring-process claim is based on its page body.
 - [MIT 6.006 practice problems](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/practice-problems/) and [Erickson's coursework archive](https://jeffe.cs.illinois.edu/teaching/algorithms/hwex.html): additional university-level exercises. Attempt problems before consulting any provided solutions.

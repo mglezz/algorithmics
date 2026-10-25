@@ -20,7 +20,7 @@ The tails array gives the optimal length but need not itself be an actual subseq
 
 ## Weighted interval scheduling
 
-Sort jobs by finish time. Let `p(i)` be the number of earlier jobs finishing no later than job i starts, under a consistent indexing convention. Let `F(i)` be the maximum value among the first `i` jobs:
+Sort positive-length jobs by finish time and number them **1 through n in this recurrence**. Let `p(i)` be the number of earlier jobs finishing no later than job i starts. These compatible earlier jobs form a prefix. Let `F(i)` be the maximum value among the first `i` jobs:
 
 ```text
 F(0) = 0

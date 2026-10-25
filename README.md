@@ -29,4 +29,14 @@ The existing [service dependencies implementation](problems/serviceDependencies/
 
 The curriculum covers undergraduate foundations, common interview techniques, and advanced extensions. It is a study plan, not an official Google syllabus or a promise of an offer. Interview format and internship eligibility depend on the role and recruiting process; confirm those with your recruiter and the current job description.
 
-All added code, documentation, exercises, and commit messages are in English. Java API claims use explicitly versioned documentation. Each unit links to primary sources. Do not memorize templates without their preconditions: an algorithm is only a solution when its assumptions match the problem.
+All added code, documentation, exercises, and commit messages are in English. Java API claims use explicitly versioned documentation. Each unit links to primary sources; see the [source register and verification notes](theory/SOURCES.md). Do not memorize templates without their preconditions: an algorithm is only a solution when its assumptions match the problem.
+
+## Verify the examples
+
+With PowerShell and a JDK supporting Java 17 compilation, run from the repository root:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\verify-theory.ps1
+```
+
+This compiles the Java blocks directly from the notes, runs deterministic property and differential checks, and verifies local documentation links. It also checks the existing clean startup-order solution. Temporary build files are cleaned up automatically. The execution-policy option applies only to this PowerShell process; it does not change the machine's saved policy. If your shell already permits scripts, `./tests/verify-theory.ps1` is sufficient.

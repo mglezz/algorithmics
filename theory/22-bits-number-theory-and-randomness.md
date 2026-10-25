@@ -61,3 +61,4 @@ For a sample of k items, retain the first k; at step t>k, choose an integer unif
 - [Java Language Specification, expressions](https://docs.oracle.com/javase/specs/jls/se21/html/jls-15.html): shifts, integer operations, and evaluation rules.
 - [MIT Mathematics for Computer Science readings](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/pages/readings/): number theory, counting, and probability.
 - [Competitive Programmer's Handbook, Antti Laaksonen](https://cses.fi/book/book.pdf): bit manipulation, number theory, and probability; code there uses C++, so translate language semantics carefully.
+- [Stanford CS168, Sampling](https://theory.stanford.edu/~tim/s17/l/l13.pdf) and [NIST reservoir sampling](https://xlinux.nist.gov/dads/HTML/reservoirSampling.html): uniform sampling from streams.
