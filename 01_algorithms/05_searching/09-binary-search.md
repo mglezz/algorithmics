@@ -79,7 +79,7 @@ Never combine updates from different interval conventions. For a closed `[low,hi
 
 ## Practice
 
-Attempt the [unit 09 exercise set](../../03_problems/02_practice/09-binary-search.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 09 exercise set](../../03_problems/02_practice/09_binary-search/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

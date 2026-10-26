@@ -68,7 +68,7 @@ The start event turns the increment on; the end event turns it off. This is an o
 
 ## Practice
 
-Attempt the [unit 04 exercise set](../../03_problems/02_practice/04-arrays-strings-and-prefix-sums.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 04 exercise set](../../03_problems/02_practice/04_arrays-strings-and-prefix-sums/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

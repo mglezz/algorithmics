@@ -58,7 +58,7 @@ Autocomplete first finds the prefix node, then traverses descendants. Its cost i
 
 ## Practice
 
-Attempt the [unit 20 exercise set](../../03_problems/02_practice/20-tries-and-string-matching.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 20 exercise set](../../03_problems/02_practice/20_tries-and-string-matching/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

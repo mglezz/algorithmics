@@ -81,7 +81,7 @@ Both expressions equal `1/C(t,k)`. Together with the unique initial subset at t=
 
 ## Practice
 
-Attempt the [unit 22 exercise set](../../03_problems/02_practice/22-bits-number-theory-and-randomness.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 22 exercise set](../../03_problems/02_practice/22_bits-number-theory-and-randomness/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

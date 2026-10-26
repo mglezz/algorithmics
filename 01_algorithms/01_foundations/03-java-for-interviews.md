@@ -83,7 +83,7 @@ Deep recursion can exhaust the thread stack. Java does not promise tail-call eli
 
 ## Practice
 
-Attempt the [unit 03 exercise set](../../03_problems/02_practice/03-java-for-interviews.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 03 exercise set](../../03_problems/02_practice/03_java-for-interviews/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

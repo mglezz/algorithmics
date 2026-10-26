@@ -104,7 +104,7 @@ Combine a map from key to node with a doubly linked recency list. Lookup finds t
 
 ## Practice
 
-Attempt the [unit 07 exercise set](../../03_problems/02_practice/07-linked-lists.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 07 exercise set](../../03_problems/02_practice/07_linked-lists/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

@@ -58,7 +58,7 @@ For positive `K`, this finds the shortest nonempty range even with negative valu
 
 ## Practice
 
-Attempt the [unit 08 exercise set](../../03_problems/02_practice/08-stacks-queues-and-monotonic-structures.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 08 exercise set](../../03_problems/02_practice/08_stacks-queues-and-monotonic-structures/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

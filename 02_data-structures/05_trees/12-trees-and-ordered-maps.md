@@ -88,7 +88,7 @@ For a general rooted tree, use the two greatest child heights. For negative weig
 
 ## Practice
 
-Attempt the [unit 12 exercise set](../../03_problems/02_practice/12-trees-and-ordered-maps.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 12 exercise set](../../03_problems/02_practice/12_trees-and-ordered-maps/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

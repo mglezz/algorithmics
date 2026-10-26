@@ -56,7 +56,7 @@ Rows are sources; columns are destinations.
 
 ## Practice
 
-Attempt the [unit 14 exercise set](../../03_problems/02_practice/14-graphs-and-topological-order.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 14 exercise set](../../03_problems/02_practice/14_graphs-and-topological-order/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

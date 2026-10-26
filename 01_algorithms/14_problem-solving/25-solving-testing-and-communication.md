@@ -80,7 +80,7 @@ For internship preparation, build strong evidence from coursework, personal proj
 
 ## Practice
 
-Attempt the [unit 25 exercise set](../../03_problems/02_practice/25-mixed-interviews.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 25 exercise set](../../03_problems/02_practice/25_mixed-interviews/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

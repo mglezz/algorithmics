@@ -100,7 +100,7 @@ Both boundaries move at most `n` times: `O(n)` time, including validation, and `
 
 ## Practice
 
-Attempt the [unit 06 exercise set](../../03_problems/02_practice/06-two-pointers-and-sliding-windows.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 06 exercise set](../../03_problems/02_practice/06_two-pointers-and-sliding-windows/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

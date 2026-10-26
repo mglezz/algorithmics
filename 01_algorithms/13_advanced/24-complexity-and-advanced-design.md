@@ -102,7 +102,7 @@ A Count-Min Sketch approximates nonnegative stream frequencies with hashed count
 
 ## Practice
 
-Attempt the [unit 24 exercise set](../../03_problems/02_practice/24-complexity-and-advanced-design.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 24 exercise set](../../03_problems/02_practice/24_complexity-and-advanced-design/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

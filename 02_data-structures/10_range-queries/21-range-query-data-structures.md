@@ -109,7 +109,7 @@ Coordinate compression sorts distinct coordinates and maps them to ranks. It pre
 
 ## Practice
 
-Attempt the [unit 21 exercise set](../../03_problems/02_practice/21-range-query-data-structures.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 21 exercise set](../../03_problems/02_practice/21_range-query-data-structures/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

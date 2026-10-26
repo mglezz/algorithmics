@@ -88,7 +88,7 @@ An ordered map is preferable when you need floor/ceiling queries, range scans, o
 
 ## Practice
 
-Attempt the [unit 05 exercise set](../../03_problems/02_practice/05-hash-tables.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 05 exercise set](../../03_problems/02_practice/05_hash-tables/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

@@ -91,7 +91,7 @@ For subset sum with roughly forty entries, split into halves, enumerate both set
 
 ## Practice
 
-Attempt the [unit 11 exercise set](../../03_problems/02_practice/11-recursion-and-backtracking.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 11 exercise set](../../03_problems/02_practice/11_recursion-and-backtracking/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

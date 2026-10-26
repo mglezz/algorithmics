@@ -97,7 +97,7 @@ Optimization techniques such as divide-and-conquer DP or convex hull methods req
 
 ## Practice
 
-Attempt the [unit 19 exercise set](../../03_problems/02_practice/19-dynamic-programming-patterns.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 19 exercise set](../../03_problems/02_practice/19_dynamic-programming-patterns/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

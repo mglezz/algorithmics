@@ -49,7 +49,7 @@ Two stacks implement a queue: enqueue into an input stack; dequeue from an outpu
 
 ## Practice
 
-Attempt the [unit 08 exercise set](../../03_problems/02_practice/08-stacks-queues-and-monotonic-structures.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 08 exercise set](../../03_problems/02_practice/08_stacks-queues-and-monotonic-structures/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

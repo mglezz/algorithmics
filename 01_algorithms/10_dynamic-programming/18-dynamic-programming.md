@@ -102,7 +102,7 @@ An omitted state dimension can merge inequivalent futures. A default zero can fa
 
 ## Practice
 
-Attempt the [unit 18 exercise set](../../03_problems/02_practice/18-dynamic-programming.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 18 exercise set](../../03_problems/02_practice/18_dynamic-programming/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

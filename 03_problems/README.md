@@ -12,9 +12,9 @@ This folder contains exercises you can work on, together with your implementatio
 
 ## Suggested practice
 
-- [Practice sets](02_practice/README.md): 24 topic exercise sets and one mixed-interview set, moved out of the theory. These are optional prompts, not completed work.
+- [Practice sets](02_practice/README.md): 108 individual exercise folders, grouped into 24 topic units and one mixed-interview unit. These are optional prompts, not completed work.
 
-For a new solution, use a descriptive folder name and include the contract, approach, correctness argument, complexity, and tests. Record your own progress in [PROGRESS.md](../PROGRESS.md).
+Use the existing folder for each suggested exercise. For a new exercise of your own, create a numbered descriptive folder and include the contract, approach, correctness argument, complexity, and tests. Record your own progress in [PROGRESS.md](../PROGRESS.md).
 
 ---
 

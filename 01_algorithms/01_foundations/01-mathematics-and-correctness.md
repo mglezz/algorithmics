@@ -105,7 +105,7 @@ Validating an answer is not always enough to establish optimality. A feasible sc
 
 ## Practice
 
-Attempt the [unit 01 exercise set](../../03_problems/02_practice/01-mathematics-and-correctness.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 01 exercise set](../../03_problems/02_practice/01_mathematics-and-correctness/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

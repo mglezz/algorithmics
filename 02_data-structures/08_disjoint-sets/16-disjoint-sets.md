@@ -82,7 +82,7 @@ DSU answers connectivity, not a path between vertices. Ordinary DSU also does no
 
 ## Practice
 
-Attempt the [unit 16 exercise set](../../03_problems/02_practice/16-disjoint-sets-and-spanning-trees.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 16 exercise set](../../03_problems/02_practice/16_disjoint-sets-and-spanning-trees/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

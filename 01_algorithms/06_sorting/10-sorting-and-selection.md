@@ -85,7 +85,7 @@ The comparison lower bound comes from distinguishing `n!` input orders using bin
 
 ## Practice
 
-Attempt the [unit 10 exercise set](../../03_problems/02_practice/10-sorting-and-selection.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 10 exercise set](../../03_problems/02_practice/10_sorting-and-selection/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

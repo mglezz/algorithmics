@@ -108,7 +108,7 @@ An exact maximum in an unsorted array requires `n-1` comparisons in the comparis
 
 ## Practice
 
-Attempt the [unit 02 exercise set](../../03_problems/02_practice/02-complexity-and-amortization.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 02 exercise set](../../03_problems/02_practice/02_complexity-and-amortization/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

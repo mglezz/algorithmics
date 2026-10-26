@@ -83,7 +83,7 @@ If equal priorities require FIFO behavior, add an increasing sequence number to 
 
 ## Practice
 
-Attempt the [unit 13 exercise set](../../03_problems/02_practice/13-heaps-and-priority-queues.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 13 exercise set](../../03_problems/02_practice/13_heaps-and-priority-queues/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

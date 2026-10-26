@@ -1,0 +1,33 @@
+# 24 - Computational Limits and Advanced Algorithm Design
+
+<!-- study-navigation -->
+[← Previous: Unit 23](../23_advanced-graphs-and-flow/README.md) · [Index](../README.md) · [Next: Unit 25 →](../25_mixed-interviews/README.md)
+<!-- /study-navigation -->
+
+[Practice index](../README.md) | Theory: [Computational Limits and Advanced Algorithm Design](../../../01_algorithms/13_advanced/24-complexity-and-advanced-design.md)
+
+**Status:** Suggested practice; no solution or completion is implied. These prompts and hints were written for this repository, not copied from a recruiting question bank.
+
+## Your deliverable
+
+Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+
+## Exercises
+
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+
+| Exercise | Workspace |
+|---|---|
+| 24.01 | [Hamiltonian Cycle Verification](01_hamiltonian-cycle-verification/README.md) |
+| 24.02 | [Vertex-Cover Approximation](02_vertex-cover-approximation/README.md) |
+| 24.03 | [Convex Hull Edge Cases](03_convex-hull-edge-cases/README.md) |
+| 24.04 | [Persistent Range Sums](04_persistent-range-sums/README.md) |
+| 24.05 | [Stream-Frequency Guarantees](05_stream-frequency-guarantees/README.md) |
+
+Attempt the task before opening its hints, and record whether the attempt was independent.
+
+---
+
+<!-- study-navigation -->
+[← Previous: Unit 23](../23_advanced-graphs-and-flow/README.md) · [Index](../README.md) · [Next: Unit 25 →](../25_mixed-interviews/README.md)
+<!-- /study-navigation -->

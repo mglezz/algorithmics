@@ -33,7 +33,7 @@ Record the specific mistake, any hint used, a minimal counterexample, and a dela
 ## Full explanations
 
 - [Problem-solving and validation](../01_algorithms/14_problem-solving/25-solving-testing-and-communication.md)
-- [Mixed exercises](../03_problems/02_practice/25-mixed-interviews.md)
+- [Mixed exercises](../03_problems/02_practice/25_mixed-interviews/README.md)
 
 These are summaries of the linked chapters. Their source attribution is in those chapters and [SOURCES.md](../SOURCES.md).
 

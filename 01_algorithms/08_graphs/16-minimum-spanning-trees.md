@@ -52,7 +52,7 @@ Example: on a triangle with weights `ab=2`, `bc=3`, `ac=9`, Kruskal accepts the 
 
 ## Practice
 
-Attempt the [unit 16 exercise set](../../03_problems/02_practice/16-disjoint-sets-and-spanning-trees.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 16 exercise set](../../03_problems/02_practice/16_disjoint-sets-and-spanning-trees/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

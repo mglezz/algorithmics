@@ -92,7 +92,7 @@ To reduce bipartite matching to flow, connect source to left vertices, compatibi
 
 ## Practice
 
-Attempt the [unit 23 exercise set](../../03_problems/02_practice/23-advanced-graphs-and-flow.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 23 exercise set](../../03_problems/02_practice/23_advanced-graphs-and-flow/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

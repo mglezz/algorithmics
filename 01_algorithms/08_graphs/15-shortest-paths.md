@@ -98,7 +98,7 @@ For sparse all-pairs problems, Johnson computes vertex potentials with Bellman-F
 
 ## Practice
 
-Attempt the [unit 15 exercise set](../../03_problems/02_practice/15-shortest-paths.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 15 exercise set](../../03_problems/02_practice/15_shortest-paths/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 

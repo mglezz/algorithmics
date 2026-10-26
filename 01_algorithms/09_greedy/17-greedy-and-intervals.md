@@ -78,7 +78,7 @@ For union length of half-open intervals, group events by coordinate, add the gap
 
 ## Practice
 
-Attempt the [unit 17 exercise set](../../03_problems/02_practice/17-greedy-and-intervals.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
+Attempt the [unit 17 exercise set](../../03_problems/02_practice/17_greedy-and-intervals/README.md). Exercises and hints live in `03_problems/`; this chapter contains the theory.
 
 ## Attribution and references
 
