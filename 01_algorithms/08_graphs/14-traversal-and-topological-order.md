@@ -56,7 +56,7 @@ Time is `O(V+E)` and auxiliary space including constructed adjacency is `O(V+E)`
 
 ## Case study: Service Startup Dependencies
 
-Read [SimpleAlgorithm.java](../../03_problems/01_serviceDependencies/src/servicedependencies/SimpleAlgorithm.java). A pair `{service, prerequisite}` creates edge `prerequisite -> service`, not the reverse. For the existing example:
+Read [SimpleServiceAlgorithm.java](../../03_problems/01_serviceDependencies/src/SimpleServiceAlgorithm.java). A pair `{service, prerequisite}` creates edge `prerequisite -> service`, not the reverse. For the existing example:
 
 ```text
 0 -> 1 -> 3
@@ -74,7 +74,7 @@ Both orders with 1 and 2 exchanged are legal. Test output properties rather than
 
 Duplicate dependency pairs remain consistent in this implementation because it increments and decrements once per stored edge. A deduplicating variant must deduplicate both operations. A self-loop prevents that service from becoming ready. Isolated services must still appear. With `n=0`, an empty result is a valid order as well as the chosen failure sentinel; callers need the input size to interpret it.
 
-The implementation assumes nonnegative `n`, well-formed pairs, and IDs in range. The verbose [Algorithm.java](../../03_problems/01_serviceDependencies/src/servicedependencies/Algorithm.java) prints whole arrays and growing prefixes: debug output can print `Theta(V^2)` vertex entries over all prefixes (and additional characters for their labels), so its traced runtime is not simply the clean algorithm's linear bound.
+The implementation assumes nonnegative `n`, well-formed pairs, and IDs in range. The verbose [ServiceAlgorithm.java](../../03_problems/01_serviceDependencies/src/ServiceAlgorithm.java) prints whole arrays and growing prefixes: debug output can print `Theta(V^2)` vertex entries over all prefixes (and additional characters for their labels), so its traced runtime is not simply the clean algorithm's linear bound.
 
 ## Explain it in English
 
@@ -93,7 +93,7 @@ Attempt the [unit 14 exercise set](../../03_problems/02_practice/14_graphs-and-t
 | Section / claim | Source used | How it is used |
 |---|---|---|
 | BFS layers, DFS and topological ordering | [Demaine, Ku and Solomon, MIT 6.006 (Spring 2020)](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/) | Lectures 9-10; algorithms and correctness framework. |
-| Service-dependency case study | This repository | Analysis of this repository's existing SimpleAlgorithm.java; not an external example. |
+| Service-dependency case study | This repository | Analysis of this repository's existing SimpleServiceAlgorithm.java; not an external example. |
 
 See [SOURCES.md](../../SOURCES.md) for editions, review scope, and the distinction between consulted material and further reading.
 

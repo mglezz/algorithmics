@@ -1,4 +1,4 @@
-public class Main {
+public class Main01_01 {
 
     public static void main(String[] args) {
         
@@ -8,7 +8,7 @@ public class Main {
 
         int[] array3 = {3, 3, 3, 5, 5, 7, 8, 9, 9, 10 , 10};
 
-        Algorithm algorithm = new Algorithm();
+        Algorithm01_01 algorithm = new Algorithm01_01();
 
         algorithm.removeDuplicated(array1);
         algorithm.removeDuplicated(array2);

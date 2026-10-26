@@ -14,7 +14,7 @@ State a contract for removing duplicates from a sorted array in place. Specify t
 
 ## Your workspace
 
-Keep Java implementations and tests in `src/`, using the default package. Start from [Main.java](src/Main.java) and [Algorithm.java](src/Algorithm.java). For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Keep Java implementations and tests in `src/`, using the default package. Start from [Main01_01.java](src/Main01_01.java) and [Algorithm01_01.java](src/Algorithm01_01.java). For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
 
 State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
 

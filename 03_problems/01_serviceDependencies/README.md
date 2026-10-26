@@ -58,9 +58,9 @@ public int[] findStartupOrder(int n, int[][] dependencies) {
 
 ## Java source layout
 
-The Java files live in `src/servicedependencies/` and declare `package servicedependencies;`. Start from [Main.java](src/servicedependencies/Main.java); the implementations are [Algorithm.java](src/servicedependencies/Algorithm.java) and [SimpleAlgorithm.java](src/servicedependencies/SimpleAlgorithm.java).
+The Java files live directly in `src/` and use the default package. Start from [ServiceMain.java](src/ServiceMain.java); the implementations are [ServiceAlgorithm.java](src/ServiceAlgorithm.java) and [SimpleServiceAlgorithm.java](src/SimpleServiceAlgorithm.java).
 
-The repository's VS Code settings register this exercise's `src` directory as a Java source root, so the numbered study folders are outside the package name.
+Use this exercise's `src` directory as the Java source root. The service-specific class names avoid conflicts with `Main` and `Algorithm` in the deduplication exercise without requiring a package subfolder.
 
 <details><summary>Hints and Java starting point</summary>
 

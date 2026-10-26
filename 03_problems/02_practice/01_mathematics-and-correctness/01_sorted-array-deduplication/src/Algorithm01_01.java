@@ -1,4 +1,4 @@
-public class Algorithm {
+public class Algorithm01_01 {
 
     public int removeDuplicated(int[] array) {
         if (array.length == 0) {

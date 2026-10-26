@@ -1,11 +1,9 @@
-package servicedependencies;
-
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
-public class SimpleAlgorithm {
+public class SimpleServiceAlgorithm {
 
     public int[] findStartupOrder(int n, int[][] dependencies) {
 

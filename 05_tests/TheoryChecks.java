@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import servicedependencies.SimpleAlgorithm;
 
 /** Differential and property checks for examples extracted by verify-theory.ps1. */
 public final class TheoryChecks {
@@ -249,7 +248,7 @@ public final class TheoryChecks {
         }
         boolean cyclic = false;
         for (int i = 0; i < size; i++) cyclic |= reachable[i][i];
-        int[] order = new SimpleAlgorithm().findStartupOrder(size, dependencies);
+        int[] order = new SimpleServiceAlgorithm().findStartupOrder(size, dependencies);
         if (cyclic) {
             check(order.length == 0, "Cyclic graph must have no startup order");
             return;

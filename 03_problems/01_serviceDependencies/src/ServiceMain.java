@@ -1,6 +1,4 @@
-package servicedependencies;
-
-public class Main {
+public class ServiceMain {
     public static void main(String[] args) {
 
         int numberServices = 4;
@@ -12,7 +10,7 @@ public class Main {
             {3, 2}
         };
 
-        Algorithm algorithm = new Algorithm();  
+        ServiceAlgorithm algorithm = new ServiceAlgorithm();
 
         algorithm.findStartupOrder(numberServices, dependencies, true);
 
