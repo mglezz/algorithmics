@@ -56,6 +56,12 @@ public int[] findStartupOrder(int n, int[][] dependencies) {
 
 "Your solution must work for any valid number of services, including services with no dependencies, and must return an empty array if a circular dependency prevents all services from starting. You can use standard Java collections such as `HashMap`, `ArrayList`, `Queue`, or anything else you consider appropriate.
 
+## Java source layout
+
+The Java files live in `src/servicedependencies/` and declare `package servicedependencies;`. Start from [Main.java](src/servicedependencies/Main.java); the implementations are [Algorithm.java](src/servicedependencies/Algorithm.java) and [SimpleAlgorithm.java](src/servicedependencies/SimpleAlgorithm.java).
+
+The repository's VS Code settings register this exercise's `src` directory as a Java source root, so the numbered study folders are outside the package name.
+
 <details><summary>Hints and Java starting point</summary>
 
 ### Java starting point

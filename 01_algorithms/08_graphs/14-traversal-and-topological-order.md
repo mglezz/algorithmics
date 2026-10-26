@@ -56,7 +56,7 @@ Time is `O(V+E)` and auxiliary space including constructed adjacency is `O(V+E)`
 
 ## Case study: Service Startup Dependencies
 
-Read [SimpleAlgorithm.java](../../03_problems/01_serviceDependencies/SimpleAlgorithm.java). A pair `{service, prerequisite}` creates edge `prerequisite -> service`, not the reverse. For the existing example:
+Read [SimpleAlgorithm.java](../../03_problems/01_serviceDependencies/src/servicedependencies/SimpleAlgorithm.java). A pair `{service, prerequisite}` creates edge `prerequisite -> service`, not the reverse. For the existing example:
 
 ```text
 0 -> 1 -> 3
@@ -74,7 +74,7 @@ Both orders with 1 and 2 exchanged are legal. Test output properties rather than
 
 Duplicate dependency pairs remain consistent in this implementation because it increments and decrements once per stored edge. A deduplicating variant must deduplicate both operations. A self-loop prevents that service from becoming ready. Isolated services must still appear. With `n=0`, an empty result is a valid order as well as the chosen failure sentinel; callers need the input size to interpret it.
 
-The implementation assumes nonnegative `n`, well-formed pairs, and IDs in range. The verbose [Algorithm.java](../../03_problems/01_serviceDependencies/Algorithm.java) prints whole arrays and growing prefixes: debug output can print `Theta(V^2)` vertex entries over all prefixes (and additional characters for their labels), so its traced runtime is not simply the clean algorithm's linear bound.
+The implementation assumes nonnegative `n`, well-formed pairs, and IDs in range. The verbose [Algorithm.java](../../03_problems/01_serviceDependencies/src/servicedependencies/Algorithm.java) prints whole arrays and growing prefixes: debug output can print `Theta(V^2)` vertex entries over all prefixes (and additional characters for their labels), so its traced runtime is not simply the clean algorithm's linear bound.
 
 ## Explain it in English
 

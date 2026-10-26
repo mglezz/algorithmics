@@ -1,4 +1,4 @@
-package problems.serviceDependencies;
+package servicedependencies;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package problems.serviceDependencies;
+package servicedependencies;
 
 public class Main {
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-import problems.serviceDependencies.SimpleAlgorithm;
+import servicedependencies.SimpleAlgorithm;
 
 /** Differential and property checks for examples extracted by verify-theory.ps1. */
 public final class TheoryChecks {

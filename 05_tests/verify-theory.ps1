@@ -112,7 +112,7 @@ try {
     [System.IO.File]::WriteAllText($examplePath, $exampleSource, [System.Text.UTF8Encoding]::new($false))
     $classPath = Join-Path $temporaryPath 'classes'
     New-Item -ItemType Directory -Path $classPath | Out-Null
-    $originalSources = @(Get-ChildItem -LiteralPath (Join-Path $repositoryPath '03_problems/01_serviceDependencies') -Filter '*.java' | ForEach-Object FullName)
+    $originalSources = @(Get-ChildItem -LiteralPath (Join-Path $repositoryPath '03_problems/01_serviceDependencies/src') -Filter '*.java' -Recurse | ForEach-Object FullName)
     $hintPaths = @(
         for ($index = 0; $index -lt $hintSnippets.Count; $index++) {
             $hintClassName = "HintExample$index"
