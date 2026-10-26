@@ -1,5 +1,9 @@
 # Learning Progress
 
+<!-- study-navigation -->
+[← Previous: Sources](SOURCES.md) · [Index](README.md) · [Next: Verification →](05_tests/README.md)
+<!-- /study-navigation -->
+
 Material available is not material mastered. Mark a topic only after independent work.
 
 ## Mastery criteria
@@ -44,3 +48,9 @@ What I changed:
 English explanation to practice:
 Next review and variation:
 ```
+
+---
+
+<!-- study-navigation -->
+[← Previous: Sources](SOURCES.md) · [Index](README.md) · [Next: Verification →](05_tests/README.md)
+<!-- /study-navigation -->

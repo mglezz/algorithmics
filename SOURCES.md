@@ -1,5 +1,9 @@
 # Sources, Verification, and Further Study
 
+<!-- study-navigation -->
+[← Previous: Quick notes](04_notes/README.md) · [Index](README.md) · [Next: Progress →](PROGRESS.md)
+<!-- /study-navigation -->
+
 [Curriculum](CURRICULUM.md)
 
 Reference review date: **2026-10-25**. This is the review date, not the publication date of the linked material.
@@ -72,9 +76,15 @@ For current requirements, use the specific public job description and direct rec
 From the repository root in PowerShell, with a JDK supporting `--release 17` available:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\verify-theory.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\05_tests\verify-theory.ps1
 ```
 
-The script verifies local documentation targets and balanced code fences, extracts every `java` block into a temporary class, compiles with warnings treated as errors, and runs deterministic property/differential checks. Generated classes are stored in a unique operating-system temporary directory and removed afterward. The execution-policy option is scoped to this invocation and does not change the saved machine policy; use `./tests/verify-theory.ps1` directly if scripts are already permitted. External URLs require a separate online review; the local script does not claim to check them.
+The script verifies local documentation targets and balanced code fences, extracts the theory's `java` blocks into a temporary class, compiles the marked exercise hints in separate temporary classes, and treats compiler warnings as errors. It also checks repeated previous/index/next navigation and runs deterministic property/differential checks on the theory examples and service-dependency algorithm. The hint helpers are compiled, not executed by those behavioral checks. Generated classes are stored in a unique operating-system temporary directory and removed afterward. The execution-policy option is scoped to this invocation and does not change the saved machine policy; use `./05_tests/verify-theory.ps1` directly if scripts are already permitted. External URLs require a separate online review; the local script does not claim to check them.
 
 When correcting a unit, record the precise failed claim, counterexample or authoritative source, changed assumption, and any relevant new regression test. Keep a correction in its own descriptive commit rather than silently changing the learning history.
+
+---
+
+<!-- study-navigation -->
+[← Previous: Quick notes](04_notes/README.md) · [Index](README.md) · [Next: Progress →](PROGRESS.md)
+<!-- /study-navigation -->
