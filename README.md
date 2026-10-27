@@ -1,10 +1,6 @@
 # Algorithmics
 
-<!-- study-navigation -->
-[← Previous: Overview](README.md) · [Index](README.md) · [Next: Study guide →](CURRICULUM.md)
-<!-- /study-navigation -->
-
-Algorithms and data structures in English, with Java examples and a separate space for your own practice.
+Algorithms and data structures in English, with Java examples and a separate space for own practice.
 
 ## Where things belong
 
