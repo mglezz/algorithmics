@@ -1,10 +1,6 @@
 # Algorithmics
 
-<!-- study-navigation -->
-[← Previous: Overview](README.md) · [Index](README.md) · [Next: Study guide →](CURRICULUM.md)
-<!-- /study-navigation -->
-
-Algorithms and data structures in English, with Java examples and a separate space for your own practice.
+Algorithms and data structures in English, with Java examples and a separate space for own practice.
 
 ## Where things belong
 
@@ -74,16 +70,6 @@ These topics broaden judgment. Their inclusion is an educational choice, not a c
 Each theory chapter maps sections to named sources and distinguishes standard algorithms from repository-written explanations, diagrams and code. [SOURCES.md](SOURCES.md) records references, attribution policy, review corrections and limits.
 
 This is a broad study course with advanced extensions, not an official Google syllabus or an exhaustive algorithms textbook. Check the specific role and recruiter instructions for current interview requirements.
-
-## Verify the material
-
-With PowerShell and a JDK supporting Java 17 compilation:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\05_tests\verify-theory.ps1
-```
-
-The policy option affects only this process. The script checks local links and Markdown structure, compiles Java directly from the theory, and runs property/differential checks. See [05_tests/README.md](05_tests/README.md) for exact coverage.
 
 ---
 
