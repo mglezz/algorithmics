@@ -31,7 +31,10 @@ Material available is not material mastered. Mark a topic only after independent
 
 | Problem | Technique | Evidence | Next review |
 |---|---|---|---|
+| 02.01 - Repeated Division (2026-10-30) | Invariant and exact count: ⌊log₃(n)⌋ + 1 | User implementation; theory added with assistance; updated input handling reviewed | Explain the +1 for powers of three and reproduce the correctness proof |
 | Service Startup Dependencies | Kahn's topological ordering | Existing implementation; independent recall and testing not assessed | Re-derive the indegree invariant after unit 14 |
+| 01.03 - Zero-Indegree Counterexample (2026-10-30) | Counterexample with an isolated vertex and a directed cycle | Theoretical solution added with assistance; independent understanding pending | Reconstruct the counterexample and explain why it disproves the claim |
+| 01.04 - Counting Subsequences (2026-10-30) | Combinations of positions: C(n, k) | Theoretical solution added with assistance; independent understanding pending | Distinguish counting by index from counting distinct value sequences using another example |
 
 Copy this template for each attempt:
 
