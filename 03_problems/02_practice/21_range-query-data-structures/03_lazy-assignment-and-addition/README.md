@@ -1,4 +1,4 @@
-# 21.03 - Lazy Assignment and Addition
+# 21.03 - Lazy Range Assignment and Addition
 
 <!-- study-navigation -->
 [← Previous: Exercise 21.02](../02_segment-tree-range-minimum/README.md) · [Index](../README.md) · [Next: Exercise 21.04 →](../04_sparse-table-overlap/README.md)
@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Implement range assignment plus range addition plus range sum with lazy tags.
+Implement `RangeSums(long[] values)` with `assign(left,right,value)`, `add(left,right,delta)` and `long sum(left,right)` on half-open ranges. Use lazy propagation with O(log n) operations. Empty updates do nothing; empty sums are zero. Assume arithmetic fits in long.
+
+## Examples and checks
+
+Start `[1,2,3]`, assign(0,2,0), add(1,3,5): values are `[0,5,8]` and total is 13. Compare mixed overlapping operations with a plain array.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Test assign zero, add, partial query, assign again, and overlapping updates against a plain array.
+Track whether an assignment exists separately from its numeric value; assignment and addition order matters.
 
-### Java starting point
+### Java helper
 
-For this exercise, an addition after an existing assignment can be folded into that assignment. These helpers describe tag composition only; updating a segment sum also needs its length. Assume arithmetic fits in long.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -47,13 +51,11 @@ static final class Tag {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Supply propagation and sum updates. Test assign-then-add and add-then-assign; they have different meanings. An assignment of zero must still carry hasAssignment = true.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

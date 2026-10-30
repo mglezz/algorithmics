@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Compute daily waiting times for a strictly warmer temperature.
+Implement `int[] dailyTemperatures(int[] temperatures)` returning days until the next strictly warmer day, or zero when none exists. Use a stack of indices and O(n) time.
+
+## Examples and checks
+
+`[73,74,75,71,69,72,76,73]` returns `[1,1,4,2,1,1,0,0]`; equal temperatures return zeros.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Use unresolved indices; equal temperatures do not resolve each other.
+Keep unresolved days on a stack; the helper below handles one incoming day.
 
-### Java starting point
+### Java helper
 
-For this exercise, pending holds indices whose answer is still unknown, with nonincreasing temperatures from bottom to top. Call this helper for each index in increasing order. A zero-initialized waiting array preserves zero for days with no warmer successor.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -39,13 +43,11 @@ static void acceptDay(int[] temperature, int day,
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Why is the comparison strict? Complete the outer scan and prove that every index is pushed and popped at most once.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

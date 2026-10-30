@@ -1,4 +1,4 @@
-# 22.04 - Exact Shuffle Probabilities
+# 22.04 - Shuffle and Exhaustive Outcome Counts
 
 <!-- study-navigation -->
 [← Previous: Exercise 22.03](../03_reservoir-retention-proof/README.md) · [Index](../README.md) · [Next: Exercise 23.01 →](../../23_advanced-graphs-and-flow/01_scc-condensation/README.md)
@@ -10,23 +10,27 @@
 
 ## Exercise
 
-Enumerate all permutations for a tiny shuffle and compare exact outcome counts for correct and biased procedures.
+Implement in-place Fisher-Yates `void shuffle(int[] values, Random random)`. Also write an exhaustive Java enumerator for arrays of size at most 5 that counts every random-choice path: compare Fisher-Yates (i=n-1 down to 1, j in 0..i) with a biased variant (i=0..n-1, j in 0..n-1).
+
+## Examples and checks
+
+For `[0,1,2]`, Fisher-Yates has 6 paths and each permutation occurs once. The biased variant has 27 paths and unequal outcome counts. Verify the shuffle preserves values.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Exhaustive enumeration of random-choice paths is stronger than a few empirical histograms for tiny n.
+Enumerate choices recursively, undoing each swap and counting immutable permutation keys.
 
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

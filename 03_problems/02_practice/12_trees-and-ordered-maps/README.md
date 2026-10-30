@@ -10,18 +10,18 @@
 
 ## Your deliverable
 
-Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+Write a Java 17 implementation and an executable runner with expected results in each exercise's `src/` folder. A short algorithm explanation is optional; formal proofs and standalone theory answers are not required. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
 
 ## Exercises
 
-Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests in its `src/` folder.
 
 | Exercise | Workspace |
 |---|---|
 | 12.01 | [BST Validation](01_bst-validation/README.md) |
-| 12.02 | [Kth Smallest Key](02_kth-smallest-key/README.md) |
+| 12.02 | [Kth Smallest BST Key](02_kth-smallest-key/README.md) |
 | 12.03 | [Tree Serialization](03_tree-serialization/README.md) |
-| 12.04 | [Height Balance and Diameter](04_height-balance-and-diameter/README.md) |
+| 12.04 | [Height, Balance and Diameter](04_height-balance-and-diameter/README.md) |
 
 Attempt the task before opening its hints, and record whether the attempt was independent.
 

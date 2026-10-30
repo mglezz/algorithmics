@@ -10,18 +10,18 @@
 
 ## Your deliverable
 
-Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+Write a Java 17 implementation and an executable runner with expected results in each exercise's `src/` folder. A short algorithm explanation is optional; formal proofs and standalone theory answers are not required. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
 
 ## Exercises
 
-Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests in its `src/` folder.
 
 | Exercise | Workspace |
 |---|---|
-| 03.01 | [Integer Promotion](01_integer-promotion/README.md) |
+| 03.01 | [Safe Integer Products](01_integer-promotion/README.md) |
 | 03.02 | [Max-Heap Snapshot](02_max-heap-snapshot/README.md) |
-| 03.03 | [Immutable Coordinate Keys](03_immutable-coordinate-keys/README.md) |
-| 03.04 | [Dependency Trace Complexity](04_dependency-trace-complexity/README.md) |
+| 03.03 | [Coordinate Frequency Map](03_immutable-coordinate-keys/README.md) |
+| 03.04 | [Service Ordering with Optional Tracing](04_dependency-trace-complexity/README.md) |
 
 Attempt the task before opening its hints, and record whether the attempt was independent.
 

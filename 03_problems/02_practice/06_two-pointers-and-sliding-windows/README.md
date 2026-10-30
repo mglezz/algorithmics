@@ -10,18 +10,18 @@
 
 ## Your deliverable
 
-Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+Write a Java 17 implementation and an executable runner with expected results in each exercise's `src/` folder. A short algorithm explanation is optional; formal proofs and standalone theory answers are not required. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
 
 ## Exercises
 
-Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests in its `src/` folder.
 
 | Exercise | Workspace |
 |---|---|
 | 06.01 | [Flipping Zeros](01_flipping-zeros/README.md) |
 | 06.02 | [Minimum Covering Window](02_minimum-covering-window/README.md) |
 | 06.03 | [Exactly K Distinct Values](03_exactly-k-distinct-values/README.md) |
-| 06.04 | [Negative-Value Counterexample](04_negative-value-counterexample/README.md) |
+| 06.04 | [Shortest Target-Sum Range with Negatives](04_negative-value-counterexample/README.md) |
 
 Attempt the task before opening its hints, and record whether the attempt was independent.
 

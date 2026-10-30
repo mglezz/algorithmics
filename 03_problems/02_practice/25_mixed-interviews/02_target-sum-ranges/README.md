@@ -10,21 +10,27 @@
 
 ## Exercise
 
-Count contiguous ranges summing to a target, with negatives allowed
+Implement `long countRanges(int[] values,long target)` and `int[] longestRange(int[] values,long target)` with negatives allowed. Return inclusive endpoints for the longest nonempty range, earliest start on ties, or empty if absent. Aim for expected O(n) time per method.
 
-**Stage:** Sequence.
+## Examples and checks
 
-**Required follow-up:** Return the longest such range
+`[1,-1,1], target=1` has count 3 and longest range `[0,2]`; empty input has count 0 and no range.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
+
+<details><summary>Implementation hint</summary>
+
+Counts need prefix frequencies; longest ranges need earliest prefix positions.
+
+</details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

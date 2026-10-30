@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Generate unique permutations of a multiset.
+Implement `List<List<Integer>> permutations(int[] values)` for at most 9 elements. Return every distinct permutation once; output order is unrestricted and the input must remain unchanged.
+
+## Examples and checks
+
+`[1,1,2]` returns `[1,1,2]`, `[1,2,1]`, `[2,1,1]`; an empty array returns one empty permutation.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Use frequency counts or a sorted array with a same-depth duplicate rule.
+Sort a copy and track used positions or keep value frequencies.
 
-### Java starting point
+### Java helper
 
-For this exercise, sort the values first and track which positions are already used in the current permutation. This helper breaks symmetry between equal values.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -35,13 +39,11 @@ static boolean skipCandidate(int[] sorted, boolean[] used, int index) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Add the choose, recurse and undo steps. Explain why the second equal value is allowed after the first equal value has already been used.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

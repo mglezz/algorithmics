@@ -1,19 +1,7 @@
-# Solution
+# Java workspace
 
 [Exercise](../README.md)
 
-## Approach
+Keep your Java implementation and executable checks in this directory. Follow the API and expected results in the exercise statement.
 
-Explain your idea in a few simple sentences.
-
-## Why it works
-
-Briefly explain why your answer is correct. Include a small example if helpful.
-
-## Complexity
-
-If applicable, state the time and extra space needed and briefly explain why.
-
-## Checks
-
-List the examples and boundary cases you checked, with their expected results.
+Optionally add a short explanation of how your algorithm works, as in exercise 02.01. No formal proof or separate theory write-up is required.

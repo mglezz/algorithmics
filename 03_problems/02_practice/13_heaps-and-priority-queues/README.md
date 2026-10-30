@@ -10,18 +10,18 @@
 
 ## Your deliverable
 
-Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+Write a Java 17 implementation and an executable runner with expected results in each exercise's `src/` folder. A short algorithm explanation is optional; formal proofs and standalone theory answers are not required. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
 
 ## Exercises
 
-Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests in its `src/` folder.
 
 | Exercise | Workspace |
 |---|---|
-| 13.01 | [Sift-Down](01_sift-down/README.md) |
-| 13.02 | [Merging Sorted Linked Lists](02_merging-sorted-linked-lists/README.md) |
+| 13.01 | [Min-Heap Sift-Down](01_sift-down/README.md) |
+| 13.02 | [Merging K Sorted Lists](02_merging-sorted-linked-lists/README.md) |
 | 13.03 | [Running Median](03_running-median/README.md) |
-| 13.04 | [Minimum Extraction versus Predecessors](04_minimum-extraction-versus-predecessors/README.md) |
+| 13.04 | [Ordered Multiset](04_minimum-extraction-versus-predecessors/README.md) |
 
 Attempt the task before opening its hints, and record whether the attempt was independent.
 

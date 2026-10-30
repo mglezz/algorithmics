@@ -14,7 +14,7 @@ This folder contains exercises you can work on, together with your implementatio
 
 - [Practice sets](02_practice/README.md): 108 individual exercise folders, grouped into 24 topic units and one mixed-interview unit. These are optional prompts, not completed work.
 
-Use the existing folder for each suggested exercise. For a new exercise of your own, create a numbered descriptive folder and include the contract, approach, correctness argument, complexity, and tests. Record your own progress in [PROGRESS.md](../PROGRESS.md).
+Use the existing folder for each suggested exercise. For a new exercise of your own, create a numbered descriptive folder and include a concrete Java coding task, input/output behavior, examples, and executable checks in `src/`. A brief explanation of the algorithm is optional. Record your own progress in [PROGRESS.md](../PROGRESS.md).
 
 ---
 

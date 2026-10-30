@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Maintain a running median and compare every prefix with a sorted copy.
+Implement `RunningMedian` with `void add(int value)` and `double median()`, using two heaps. Median throws NoSuchElementException while empty. Use O(log n) insertion and O(1) median lookup.
+
+## Examples and checks
+
+After 1,5,2,10, medians are 1,3,2,3.5. Compare each prefix with a sorted copy; test both int extremes.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Include negative extremes, equal values, and alternating very small/large values.
+Balance the heap sizes and widen before adding the middle two values.
 
-### Java starting point
+### Java helper
 
-For this exercise, separate the comparator choice from the balancing logic. The lower half needs a max-heap and the upper half needs a min-heap.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -38,13 +42,11 @@ static double averageMiddle(int lower, int upper) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Maintain ordering across heaps and a size difference of at most one. The cast happens before addition so two int values cannot overflow the sum.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

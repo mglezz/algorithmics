@@ -1,4 +1,4 @@
-# 24.03 - Convex Hull Edge Cases
+# 24.03 - Convex Hull
 
 <!-- study-navigation -->
 [← Previous: Exercise 24.02](../02_vertex-cover-approximation/README.md) · [Index](../README.md) · [Next: Exercise 24.04 →](../04_persistent-range-sums/README.md)
@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Test convex hull on duplicate, collinear, and extreme-coordinate points.
+Implement `List<Point> convexHull(List<Point> points)` with int coordinates, deduplicating equal points. Return extreme hull vertices counterclockwise, starting at the lexicographically smallest point, without repeating the start. Remove interior collinear boundary points; all-collinear input returns only its endpoints.
+
+## Examples and checks
+
+A square with a center point and duplicates returns its four corners; test empty input, one point, a line and int-extreme coordinates.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Define the output policy before checking expected hull vertices.
+Use a monotone chain and exact orientation arithmetic; the helper below avoids determinant overflow.
 
-### Java starting point
+### Java helper
 
-For this exercise, subtract int coordinates only after widening. This exact orientation helper uses BigInteger because a determinant involving extreme int coordinates can overflow long.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -40,13 +44,11 @@ static int orientation(Point a, Point b, Point c) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Decide whether collinear boundary points should remain in the hull. State that BigInteger arithmetic is not a constant-time operation for arbitrary bit lengths.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

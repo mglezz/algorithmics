@@ -10,17 +10,17 @@
 
 ## Your deliverable
 
-Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+Write a Java 17 implementation and an executable runner with expected results in each exercise's `src/` folder. A short algorithm explanation is optional; formal proofs and standalone theory answers are not required. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
 
 ## Exercises
 
-Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests in its `src/` folder.
 
 | Exercise | Workspace |
 |---|---|
 | 04.01 | [Equilibrium Index](01_equilibrium-index/README.md) |
 | 04.02 | [Range Increments](02_range-increments/README.md) |
-| 04.03 | [Rectangle Sums](03_rectangle-sums/README.md) |
+| 04.03 | [Rectangle Sum Queries](03_rectangle-sums/README.md) |
 | 04.04 | [Product Except Self](04_product-except-self/README.md) |
 
 Attempt the task before opening its hints, and record whether the attempt was independent.

@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Find the minimum window containing a target multiset of characters.
+Implement `String minWindow(String text, String target)` using Java char units. Return the shortest substring containing all target characters with their multiplicities; choose the earliest on ties. Return an empty string when impossible or target is empty.
+
+## Examples and checks
+
+`"ADOBECODEBANC","ABC"` returns `"BANC"`; `"aa","aa"` returns `"aa"`; `"a","aa"` returns empty.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Track required multiplicities and the number of satisfied requirements. Shrink only while all are met; clarify the empty-target result.
+Track missing characters and shrink only while the window covers the target.
 
-### Java starting point
+### Java helper
 
-For this exercise, this small helper maintains a character deficit map: adding a character to the window uses delta = -1; removing it uses delta = +1. Restrict calls to characters in the target. Negative deficits represent surplus copies. This version uses UTF-16 code units.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -36,13 +40,11 @@ static int adjustDeficit(Map<Character, Integer> deficit, char symbol, int delta
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Maintain a separate missing-character count. Decide which transitions change it; a negative deficit must not count as a missing character.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

@@ -10,19 +10,19 @@
 
 ## Your deliverable
 
-Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+Write a Java 17 implementation and an executable runner with expected results in each exercise's `src/` folder. A short algorithm explanation is optional; formal proofs and standalone theory answers are not required. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
 
 ## Exercises
 
-Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests in its `src/` folder.
 
 | Exercise | Workspace |
 |---|---|
-| 24.01 | [Hamiltonian Cycle Verification](01_hamiltonian-cycle-verification/README.md) |
-| 24.02 | [Vertex-Cover Approximation](02_vertex-cover-approximation/README.md) |
-| 24.03 | [Convex Hull Edge Cases](03_convex-hull-edge-cases/README.md) |
+| 24.01 | [Hamiltonian Cycle Verifier](01_hamiltonian-cycle-verification/README.md) |
+| 24.02 | [Approximate Vertex Cover](02_vertex-cover-approximation/README.md) |
+| 24.03 | [Convex Hull](03_convex-hull-edge-cases/README.md) |
 | 24.04 | [Persistent Range Sums](04_persistent-range-sums/README.md) |
-| 24.05 | [Stream-Frequency Guarantees](05_stream-frequency-guarantees/README.md) |
+| 24.05 | [Frequent Stream Candidates](05_stream-frequency-guarantees/README.md) |
 
 Attempt the task before opening its hints, and record whether the attempt was independent.
 

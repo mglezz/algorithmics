@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Analyze a loop that repeatedly divides a positive integer by three.
+Implement `Integer divide(Integer number)` to count integer divisions by three until a positive number reaches zero. Return `0` for null, zero or negative input, matching the existing implementation. Use a loop rather than logarithms.
+
+## Examples and checks
+
+`200` returns `5`; inputs `1,2,3,8,9` return `1,1,2,2,3`; check null, zero and a negative value.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in `src/README.md`; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-`Theta(log n)` iterations under unit-cost arithmetic.
+Count each executed division. The primitive helper below assumes a positive value; handle the public method's invalid inputs before using it.
 
-### Java starting point
+### Java helper
 
-For this exercise, this instrumented loop counts the iterations for a positive input. Use the trace to derive a bound; timing measurements are not a proof.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -39,8 +43,6 @@ static int divisionSteps(long value) {
 }
 ```
 <!-- /java-hint -->
-
-**Complete the reasoning:** Compare inputs 1, 2, 3, 8 and 9. Explain the floor in the exact logarithmic count.
 
 </details>
 

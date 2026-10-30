@@ -1,4 +1,4 @@
-# 15.01 - Dijkstra Counterexample
+# 15.01 - Shortest Paths with Negative Edges
 
 <!-- study-navigation -->
 [← Previous: Exercise 14.04](../../14_graphs-and-topological-order/04_dag-task-completion-times/README.md) · [Index](../README.md) · [Next: Exercise 15.02 →](../02_shortest-path-reconstruction/README.md)
@@ -10,23 +10,27 @@
 
 ## Exercise
 
-Find a small negative-edge graph that defeats Dijkstra's settled-vertex rule.
+Implement `long[] bellmanFord(int n, int[][] edges, int source)` for directed `[from,to,weight]` edges. Negative weights are allowed. Use Long.MAX_VALUE for unreachable vertices; throw IllegalArgumentException if a negative cycle is reachable from source. Assume finite path arithmetic fits in long.
+
+## Examples and checks
+
+Edges `[[0,1,1],[0,2,3],[2,1,-5]]` from 0 give `[0,-2,3]`. Test an unreachable vertex and reachable versus disconnected negative cycles.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Try `s->a:1`, `s->b:3`, `b->a:-5`; a is settled too early.
+Relax only from reachable vertices and check for further improvements after n-1 rounds.
 
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

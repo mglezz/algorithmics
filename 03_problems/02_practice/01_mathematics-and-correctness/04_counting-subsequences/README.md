@@ -10,17 +10,21 @@
 
 ## Exercise
 
-Count subsequences by index of length `k`; explain why repeated values do not change that count but can change the number of distinct resulting sequences.
+Implement `java.math.BigInteger countSubsequences(int[] values, int k)` to count subsequences of length `k` by chosen indices. Equal values at different indices count separately. Return zero for `k<0` or `k>values.length`, and one for `k=0`. Avoid enumerating all subsequences.
+
+## Examples and checks
+
+`[7,7,9], k=2` returns `3`; `[], k=0` returns `1`; 100 elements and `k=50` must work without primitive-number overflow.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in `src/README.md`; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Choose `k` of `n` positions: `C(n,k)`. Equal values can collapse several position choices into one sequence.
+Build binomial coefficients with BigInteger and a one-dimensional DP array.
 
 </details>
 

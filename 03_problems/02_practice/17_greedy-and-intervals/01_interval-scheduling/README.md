@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Implement maximum-cardinality interval scheduling and return the selected interval IDs.
+Implement `List<Integer> selectIntervals(List<Interval> intervals)` returning original IDs of a maximum-cardinality compatible subset. Intervals have unique IDs and nonempty half-open bounds `[start,end)`; touching endpoints are compatible. Return IDs in scheduled order.
+
+## Examples and checks
+
+Intervals `[0,2),[1,3),[2,4)` with IDs 0,1,2 select `[0,2]`; empty input returns empty.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Stable identity tracking matters if sorting changes input order.
+Sort by finish time and accept each compatible interval.
 
-### Java starting point
+### Java helper
 
-For this exercise, sort by finish time. These intervals are nonempty and half-open: [start, end), with start < end. Equality between the next start and previous end is compatible.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -41,13 +45,11 @@ static boolean compatible(Interval next, long previousEnd) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Supply the selection loop and retain original IDs. Prove why replacing the first selected interval with an earliest-finishing one is safe.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

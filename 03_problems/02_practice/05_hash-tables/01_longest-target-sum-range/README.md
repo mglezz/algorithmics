@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Adapt the prefix method to find the longest target-sum range rather than count all ranges.
+Implement `int[] longestRange(int[] values, long target)` returning inclusive `[start,end]` for the longest nonempty contiguous range with that sum. Negatives are allowed. Break length ties by smallest start; return an empty array if absent. Aim for expected O(n) time.
+
+## Examples and checks
+
+`[1,-1,5,-2,3], target=3` returns `[0,3]`; `[1,2], target=9` returns `[]`; check zero target and repeated prefix sums.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Store the earliest index of each prefix, not its frequency; do not overwrite that earliest index.
+Store the earliest index of each prefix sum, seeded with sum zero at index -1.
 
-### Java starting point
+### Java helper
 
-For this exercise, preserve the first index of a prefix sum. Initialize the map with 0L mapped to -1, query before recording the current prefix, and assume all prefix arithmetic fits in long.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -40,13 +44,11 @@ static void rememberFirst(Map<Long, Integer> earliest, long prefix, int index) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Explain why overwriting the earliest index can shorten the best range. Supply the scan and maximum update.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

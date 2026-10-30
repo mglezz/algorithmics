@@ -1,4 +1,4 @@
-# 18.03 - Zero-One Knapsack
+# 18.03 - 0/1 Knapsack and Reconstruction
 
 <!-- study-navigation -->
 [← Previous: Exercise 18.02](../02_minimum-coin-count/README.md) · [Index](../README.md) · [Next: Exercise 18.04 →](../04_memoization-sentinels/README.md)
@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Implement 0/1 knapsack in two dimensions, then compress it and justify the update order.
+Implement a two-dimensional DP returning the optimal long value and selected item indices for 0/1 knapsack. Then implement `long maxValueCompressed(int[] weights, int[] values, int capacity)` using O(capacity) storage. Weights are positive, values nonnegative and capacity is at most 10000; compare both totals.
+
+## Examples and checks
+
+Weights `[2,3,4]`, values `[4,5,7]`, capacity 5 give value 9 with items 0 and 1; one weight-2 value-3 item at capacity 4 still gives 3.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-With one item of weight two, an ascending loop must not fill capacity four with that item twice.
+Reconstruct from the 2D table; scan capacities downward in the compressed version.
 
-### Java starting point
+### Java helper
 
-For this exercise, isolate the update for one 0/1 item. dp[c] stores the best value with capacity at most c; initially it is zero and the empty selection is allowed. Require positive weight and nonnegative value, and assume all value sums fit in long.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -37,13 +41,11 @@ static void includeOnce(long[] dp, int weight, long value) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Supply the item loop and reconstruction strategy. Find the smallest example where scanning capacities upward incorrectly reuses the same item.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

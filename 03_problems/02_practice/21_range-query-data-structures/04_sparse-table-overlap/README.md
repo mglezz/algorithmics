@@ -1,4 +1,4 @@
-# 21.04 - Sparse Table Overlap
+# 21.04 - Static Range Minimum and Sum
 
 <!-- study-navigation -->
 [← Previous: Exercise 21.03](../03_lazy-assignment-and-addition/README.md) · [Index](../README.md) · [Next: Exercise 22.01 →](../../22_bits-number-theory-and-randomness/01_two-singleton-values/README.md)
@@ -10,23 +10,27 @@
 
 ## Exercise
 
-Explain why a static sparse-table sum query cannot use two overlapping blocks.
+Implement `StaticQueries(int[] values)` with `int min(int left,int right)` and `long sum(int left,int right)` on half-open ranges. Use a sparse table for O(1) nonempty minimum queries and prefix sums for O(1) sums. Empty queries return Integer.MAX_VALUE and 0 respectively.
+
+## Examples and checks
+
+For `[2,4,1,3]`, query `[0,3)` gives minimum 1 and sum 7; check single-element, full and empty ranges.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Shared elements would be added twice, while taking min twice changes nothing.
+Overlapping sparse-table blocks work for minimum; prefix subtraction avoids counting sum elements twice.
 
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

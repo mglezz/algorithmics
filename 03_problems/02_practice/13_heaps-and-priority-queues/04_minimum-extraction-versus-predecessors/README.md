@@ -1,4 +1,4 @@
-# 13.04 - Minimum Extraction versus Predecessors
+# 13.04 - Ordered Multiset
 
 <!-- study-navigation -->
 [← Previous: Exercise 13.03](../03_running-median/README.md) · [Index](../README.md) · [Next: Exercise 14.01 →](../../14_graphs-and-topological-order/01_service-startup-order/README.md)
@@ -10,23 +10,27 @@
 
 ## Exercise
 
-Choose a structure for frequent minimum extraction versus predecessor queries.
+Implement `OrderedMultiset` using TreeMap counts, with `add(int)`, `Integer pollMin()` and `Integer predecessor(int)`. Poll removes one smallest occurrence; predecessor returns the greatest stored value strictly below the argument without removing it. Return null when no answer exists.
+
+## Examples and checks
+
+Add 2,2,5: predecessor(5) is 2; two polls return 2 then 2; predecessor(5) then returns null.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-A heap supports the minimum well; an ordered tree supports ordered navigation.
+Store multiplicities and use lowerKey for strict predecessor queries.
 
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

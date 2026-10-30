@@ -56,6 +56,10 @@ public int[] findStartupOrder(int n, int[][] dependencies) {
 
 "Your solution must work for any valid number of services, including services with no dependencies, and must return an empty array if a circular dependency prevents all services from starting. You can use standard Java collections such as `HashMap`, `ArrayList`, `Queue`, or anything else you consider appropriate.
 
+## Executable checks
+
+Write a Java runner in `src/` that checks both examples, isolated services, duplicate dependency pairs, an empty graph and a self-loop. For every successful result, check that each service appears once and every prerequisite precedes its dependent. A short algorithm explanation is optional.
+
 ## Java source layout
 
 The Java files live directly in `src/` and use the default package. Start from [ServiceMain.java](src/ServiceMain.java); the implementations are [ServiceAlgorithm.java](src/ServiceAlgorithm.java) and [SimpleServiceAlgorithm.java](src/SimpleServiceAlgorithm.java).
@@ -85,7 +89,7 @@ static List<List<Integer>> buildGraph(int n, int[][] dependencies, int[] indegre
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Import java.util.* and place the helper inside your class. Start with every zero-indegree vertex, including isolated services. A partial order is not a valid answer when fewer than n vertices are processed.
+**Implementation checks:** Import java.util.* and place the helper inside your class. Start with every zero-indegree vertex, including isolated services. A partial order is not a valid answer when fewer than n vertices are processed.
 
 </details>
 

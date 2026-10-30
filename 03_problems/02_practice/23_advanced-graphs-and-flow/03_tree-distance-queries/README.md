@@ -1,4 +1,4 @@
-# 23.03 - Tree-Distance Queries
+# 23.03 - Tree Distance Queries
 
 <!-- study-navigation -->
 [← Previous: Exercise 23.02](../02_bridges-with-parallel-edges/README.md) · [Index](../README.md) · [Next: Exercise 23.04 →](../04_matching-reassignment/README.md)
@@ -10,23 +10,27 @@
 
 ## Exercise
 
-Answer tree-distance queries after one preprocessing pass.
+Implement `TreeDistances(int n, int[][] edges)` for an unweighted tree with n>=1, and `int distance(int u,int v)`. Preprocess binary-lifting ancestors in O(n log n) and answer each query in O(log n).
+
+## Examples and checks
+
+Edges `[[0,1],[1,2],[1,3]]` give distance(2,3)=2, distance(0,2)=2 and distance(1,1)=0.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-LCA identifies the shared root-path prefix counted twice.
+Combine depths with the lowest common ancestor.
 
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

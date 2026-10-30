@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Implement a trie with exact lookup, prefix lookup, and deletion.
+Implement a trie with `insert(String)`, `contains(String)`, `startsWith(String)` and `boolean delete(String)`, using char units. Duplicate insertions count separately; delete removes one occurrence and reports whether it existed. The empty string is allowed and startsWith("") is always true.
+
+## Examples and checks
+
+Insert car twice and cart once; deleting car twice removes car but preserves cart. A third deletion returns false. Test empty-string insertion and deletion.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Deleting `car` must not delete `cart`; prefix existence does not imply word existence.
+Keep a terminal count and prune only nonterminal nodes with no children.
 
-### Java starting point
+### Java helper
 
-For this exercise, terminal status is independent of the existence of children. This node stores UTF-16 code units. Use a count rather than a boolean when inserting a word multiple times is meaningful.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -39,13 +43,11 @@ static TrieNode extend(TrieNode node, char symbol) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Implement lookup without creating missing children. During deletion, prune a node only if it has no children and its terminal count is zero.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

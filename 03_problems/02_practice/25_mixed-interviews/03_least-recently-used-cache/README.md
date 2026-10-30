@@ -10,21 +10,27 @@
 
 ## Exercise
 
-Support cache lookup/update and eviction of the least recently used item
+Implement an integer `LRUCache(int capacity)` with expected O(1) `Integer get(int key)` and `void put(int key,int value)`, using your own doubly linked list plus HashMap. Return null for misses; reads and overwrites refresh recency. Add a runner comparing operation sequences with an access-ordered LinkedHashMap reference.
 
-**Stage:** Structure.
+## Examples and checks
 
-**Required follow-up:** State invariants and test overwrites/capacity zero
+Capacity 2: put(1,10), put(2,20), get(1), put(3,30) evicts 2. Check overwrites, repeated reads and capacity zero.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
+
+<details><summary>Implementation hint</summary>
+
+Keep the map and list synchronized after every operation.
+
+</details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Find bridges in a graph containing parallel edges and disconnected components.
+Implement `List<Integer> bridges(int n, int[][] edges)` returning sorted input edge indices whose removal increases the number of connected components. Treat edges as undirected; allow parallel edges and self-loops.
+
+## Examples and checks
+
+For `[[0,1],[0,1],[1,2]]`, only index 2 is a bridge. Test disconnected components and self-loops.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Ignore only the exact parent edge, not all edges to the parent vertex.
+Give each input edge a unique ID and skip only the incoming edge in DFS.
 
-### Java starting point
+### Java helper
 
-For this exercise, store a shared edge ID on both adjacency entries of one undirected edge. Parallel edges must receive different IDs.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -37,13 +41,11 @@ static void addUndirected(List<List<Arc>> graph, int u, int v, int edgeId) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** In DFS, skip only the incoming edge ID, not every edge to the parent vertex. Supply discovery times, low-link updates, and the strict bridge inequality.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

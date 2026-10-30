@@ -1,4 +1,4 @@
-# 16.03 - Kruskal Spanning Tree
+# 16.03 - Kruskal Minimum Spanning Tree
 
 <!-- study-navigation -->
 [← Previous: Exercise 16.02](../02_first-redundant-edge/README.md) · [Index](../README.md) · [Next: Exercise 16.04 →](../04_mst-versus-shortest-path-tree/README.md)
@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Implement Kruskal and verify the output connects all vertices, has no cycle, and contains `V-1` edges when connected.
+Implement `MstResult kruskal(int n, List<Edge> edges)` for n>=1 and undirected weighted edges. Define the result with a `boolean connected`, selected edges and their long total. When disconnected, return `connected=false` with an empty edge list and total zero; otherwise return the minimum spanning tree. Negative and parallel edges are allowed; ignore self-loops.
+
+## Examples and checks
+
+Triangle weights 2,2,3 has total 4 with two selected edges; a single vertex has total 0; test disconnected input and equal weights.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Feasibility alone does not prove minimum weight; compare tiny graphs against exhaustive spanning-tree enumeration.
+Sort by weight and select only edges joining different disjoint-set components.
 
-### Java starting point
+### Java helper
 
-For this exercise, separate safe weight comparison from the union decision. Use a long total and assume the selected weights fit in that total.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -36,13 +40,11 @@ static void orderByWeight(List<Edge> edges) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** Add an edge only when union joins two previously distinct components. Stop after V - 1 successful unions only if a spanning tree is possible.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

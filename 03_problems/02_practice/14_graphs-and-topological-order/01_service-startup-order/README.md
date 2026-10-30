@@ -10,21 +10,25 @@
 
 ## Exercise
 
-Reimplement Kahn's algorithm without looking at the existing solution.
+Implement `int[] findStartupOrder(int n, int[][] dependencies)` using Kahn's algorithm. A pair `[service,prerequisite]` requires prerequisite first. Return all service IDs in any valid order, or an empty array on a cycle. Duplicate pairs must not change feasibility.
+
+## Examples and checks
+
+`n=4, [[1,0],[2,0],[3,1],[3,2]]` permits `[0,1,2,3]`; two mutual dependencies return empty; isolated services must appear.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
 
-<details><summary>Hints and checkpoints</summary>
+<details><summary>Implementation hint</summary>
 
-Include empty graphs, isolated vertices, repeated edges, self-loops, and a cycle in a disconnected component.
+Keep indegrees consistent with the stored adjacency entries, including duplicates.
 
-### Java starting point
+### Java helper
 
-For this exercise, collect the initially ready vertices after computing indegrees. This is initialization only; add the loop that removes dependencies and detects incomplete processing.
+Optional helper members for your class; add the necessary imports from java.util. Complete the public API and tests described above.
 
 <!-- java-hint -->
 ```java
@@ -38,13 +42,11 @@ static Deque<Integer> initiallyReady(int[] indegree) {
 ```
 <!-- /java-hint -->
 
-**Complete the reasoning:** For a dependency pair [service, prerequisite], which vertex receives the incoming edge? Decide whether duplicate input pairs represent one constraint or repeated edges.
-
 </details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

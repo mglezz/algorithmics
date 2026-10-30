@@ -10,21 +10,27 @@
 
 ## Exercise
 
-Find the first index at which a sorted array reaches a threshold
+Implement `int firstAtLeast(int[] sorted,int threshold)` returning the first index whose value reaches threshold, or length. Then implement `int countEqual(int[] sorted,int value)` using two binary searches, both in O(log n).
 
-**Stage:** Foundation.
+## Examples and checks
 
-**Required follow-up:** Count equal values using two boundaries
+For `[1,2,2,5]`, threshold 2 returns 1 and countEqual(2) returns 2; threshold 6 returns 4; check empty input.
 
 ## Your workspace
 
-Keep your implementation (for example, `Solution.java`) and your tests in this folder. For a proof, analysis, or counterexample task, write your answer in the solution section below; add code only when useful.
+Write your Java 17 implementation and an executable test runner in `src/`. Use `AlgorithmXX_YY.java` and `MainXX_YY.java` with this exercise's numbers, or keep the existing class names. For data-structure exercises, use the requested class and a separate runner. Compare actual and expected results, including the cases above; throw `AssertionError` on a mismatch (or run Java assertions with `-ea`).
 
-State the input/output contract, explain correctness, analyze time and space, and check boundary cases. Java helper fragments belong inside your own class with `import java.util.*;`.
+The deliverable is working Java code and checks. You may add a short explanation of the algorithm in `src/README.md`, like exercise 02.01; a formal proof or a separate theoretical answer is not required. Unless stated otherwise, inputs are non-null, indices and graph endpoints are valid, and auxiliary result types such as `Node` or `Selection` are yours to define.
+
+<details><summary>Implementation hint</summary>
+
+Use half-open search boundaries and distinguish >= from >.
+
+</details>
 
 ## Your solution
 
-Add your approach, correctness argument, complexity analysis, and test results after attempting the exercise. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
+Keep your Java implementation and executable checks in `src/`. Optionally add a short algorithm explanation in `src/README.md`. Record the attempt in [PROGRESS.md](../../../../PROGRESS.md).
 
 ---
 

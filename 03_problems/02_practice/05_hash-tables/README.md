@@ -10,18 +10,18 @@
 
 ## Your deliverable
 
-Write a specification, your solution, a correctness argument, time/space analysis, and tests. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
+Write a Java 17 implementation and an executable runner with expected results in each exercise's `src/` folder. A short algorithm explanation is optional; formal proofs and standalone theory answers are not required. Record independent attempts in [PROGRESS.md](../../../PROGRESS.md).
 
 ## Exercises
 
-Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests beside it.
+Each exercise has its own folder. Open its README for the task and hints, then keep your implementation and tests in its `src/` folder.
 
 | Exercise | Workspace |
 |---|---|
 | 05.01 | [Longest Target-Sum Range](01_longest-target-sum-range/README.md) |
 | 05.02 | [Grouping Anagrams](02_grouping-anagrams/README.md) |
 | 05.03 | [Nearby Duplicates](03_nearby-duplicates/README.md) |
-| 05.04 | [Hash Collisions](04_hash-collisions/README.md) |
+| 05.04 | [Collision-Safe Word Counts](04_hash-collisions/README.md) |
 
 Attempt the task before opening its hints, and record whether the attempt was independent.
 

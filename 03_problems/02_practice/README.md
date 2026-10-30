@@ -6,7 +6,7 @@
 
 [Problems](../README.md) | [Curriculum](../../CURRICULUM.md)
 
-These are 108 repository-written exercises grouped into 25 numbered unit folders. Every exercise has its own numbered folder and README, with its statement and any available collapsible hints. Keep your Java solution and tests beside that README; no exercise is marked as solved.
+These are 108 practical Java programming exercises grouped into 25 numbered unit folders. Every exercise defines code to implement, expected behavior and concrete checks. Keep your Java 17 implementation and executable test runner in its `src/` folder. Existing code and personal write-ups are preserved; their presence does not imply that every revised requirement has been completed.
 
 For example:
 
@@ -14,8 +14,10 @@ For example:
 01_mathematics-and-correctness/
   README.md                              # Unit index
   01_sorted-array-deduplication/
-    README.md                            # Statement, hints, and your write-up
-    Solution.java                        # Create when you start coding
+    README.md                            # Coding task, examples and hints
+    src/
+      Algorithm01_01.java                # Your implementation
+      Main01_01.java                     # Executable checks
   02_array-reversal-invariant/
     README.md
 ```
@@ -48,9 +50,9 @@ For example:
 | 24 | [Computational Limits and Advanced Algorithm Design](24_complexity-and-advanced-design/README.md) |
 | 25 | [Mixed Interview Challenges](25_mixed-interviews/README.md) |
 
-Java hints are original helper fragments, not complete exercise solutions. Place each page's members inside a class with `import java.util.*;`; they use Java 17-compatible syntax. Read the stated preconditions and finish the surrounding algorithm, proof, and tests yourself. The repository verifier compiles these marked fragments separately for each page; it does not treat a hint as a finished solution.
+Java hints are optional helper fragments; some implement a small operation, while others provide a starting point for the full task. Place each page's members inside a class with `import java.util.*;`; they use Java 17-compatible syntax. Read the stated preconditions and complete the requested Java API and executable checks yourself. The repository verifier compiles these marked fragments separately for each page; it does not treat a hint as a finished solution.
 
-Attempt each problem before opening its hints. A finished attempt needs code, a proof, analysis, and meaningful tests.
+Attempt each problem before opening its hints. A finished attempt needs working Java code and meaningful executable checks. A short algorithm explanation like [02.01](02_complexity-and-amortization/01_repeated-division/src/README.md) is optional; formal proofs, standalone complexity analyses and written counterexamples are not deliverables.
 
 ---
 
