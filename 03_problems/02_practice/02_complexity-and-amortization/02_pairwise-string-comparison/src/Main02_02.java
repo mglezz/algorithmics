@@ -10,11 +10,26 @@ public class Main02_02 {
 
         Algorithm02_02 algorithm = new Algorithm02_02();
 
-        algorithm.countEqualPairs(words1);
-        algorithm.countEqualPairs(words2);
-        algorithm.countEqualPairs(words3);
-        algorithm.countEqualPairs(words4);
+        check(algorithm, words1, 3);
+        check(algorithm, words2, 1);
+        check(algorithm, words3, 0);
+        check(algorithm, words4, 15);
+        check(algorithm, new String[]{"cat", "cat", "cat", "cat"}, 6);
+        check(algorithm, new String[]{"cat", "ca", "", "cat"}, 1);
+        check(algorithm, new String[]{"cat"}, 0);
 
+        String prefix = "a".repeat(100);
+        check(algorithm, new String[]{prefix + "b", prefix + "c", prefix + "b"}, 1);
+
+        System.out.println("All checks passed.");
+
+    }
+
+    private static void check(Algorithm02_02 algorithm, String[] words, long expected) {
+        long actual = algorithm.countEqualPairs(words);
+        if (actual != expected) {
+            throw new AssertionError("Expected " + expected + " pairs, but got " + actual);
+        }
     }
 
 }

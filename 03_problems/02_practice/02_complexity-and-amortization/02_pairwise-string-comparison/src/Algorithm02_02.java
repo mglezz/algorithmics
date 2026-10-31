@@ -3,43 +3,53 @@ public class Algorithm02_02 {
 
     public long countEqualPairs(String[] words) {
 
-        int equalWords = 0;
-        int equalChars = 0;
-        boolean equal = true;
+        long equalPairs = 0;
+        long numberComparations = 0;
 
         for (int i = 0; i < words.length - 1; i++) {
 
             String actualWord = words[i];
-            String nextWord = words[i + 1];
 
-            char[] actualWordChar = actualWord.toCharArray();
-            char[] nextWordChar = nextWord.toCharArray();
+            for (int j = i + 1; j < words.length; j++) {
 
-            for (int j = 0; j < actualWordChar.length; j++) {
+                boolean equal = true;
 
-                if (actualWordChar[j] == nextWordChar[j]) {
+                String nextWord = words[j];
 
-                    equalChars++;
+                System.out.println("Actual comparison ... " + actualWord + " & " + nextWord);
 
+                if (actualWord.length() == nextWord.length()) {
+                    for (int k = 0; k < actualWord.length(); k++) {
+                        numberComparations++;
+                        if (actualWord.charAt(k) != nextWord.charAt(k)) {
+                            equal = false;
+                            break;
+                        }
+                    }
                 } else {
-
                     equal = false;
-
                 }
-            }
 
-            if (equal == true) {
-                equalWords++;
-            }
+                if (equal) {
+                    equalPairs++;
+                    System.out.println(actualWord + " = " + nextWord + " (" + equalPairs + ")");
+                } else {
+                    System.out.println(actualWord + " =/= " + nextWord);
+                }
 
+            }
         }
+        System.out.println("");
 
-        System.out.print("Equal strings in the array { " );
+        System.out.print("Equal strings in the array { ");
         for (int i = 0; i < words.length; i++) {
             System.out.print("(" + words[i] + ") ");
         }
-        System.out.println("} = " + equalWords);
-        return equalWords;
+        System.out.println("} = " + equalPairs);
+        System.out.println("Number of characters compared = " + numberComparations);
+        System.out.println("");
+
+        return equalPairs;
     }
 
 }
